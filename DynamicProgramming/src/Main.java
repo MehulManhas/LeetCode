@@ -19,5 +19,10 @@ public class Main {
         RegexPatternMatching regexPatternMatching = new RegexPatternMatching();
         regexPatternMatching.createDpArr(A3, B3);
         System.out.println(regexPatternMatching.calculateThroughDP(A3, B3, A3.length()-1, B3.length()-1));
+
+        int stairs = 44;
+        ClimbingStairs climbingStairs = new ClimbingStairs();
+        climbingStairs.createDpArr(stairs);
+        System.out.println(climbingStairs.calculateThroughDp(stairs));
     }
 }

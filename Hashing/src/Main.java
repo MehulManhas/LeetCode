@@ -8,5 +8,8 @@ public class Main {
         arr.add(1000000000);
         int target = 1000000000;
         ArrayList<Integer> ans = swsk.solve(arr, target);
+
+        HappyNumber happyNumber = new HappyNumber();
+        System.out.println(happyNumber.isHappy(10));
     }
 }

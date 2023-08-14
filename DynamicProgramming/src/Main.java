@@ -24,5 +24,9 @@ public class Main {
         ClimbingStairs climbingStairs = new ClimbingStairs();
         climbingStairs.createDpArr(stairs);
         System.out.println(climbingStairs.calculateThroughDp(stairs));
+
+        int[][] arr = new int[][]{{-2, -3, 3},{-5, -10, 1},{10, 30, -5}};
+        DungeonPrincess dungeonPrincess = new DungeonPrincess();
+        System.out.println(dungeonPrincess.calculateMinimumHP(arr));
     }
 }

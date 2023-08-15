@@ -28,5 +28,9 @@ public class Main {
         int[][] arr = new int[][]{{-2, -3, 3},{-5, -10, 1},{10, 30, -5}};
         DungeonPrincess dungeonPrincess = new DungeonPrincess();
         System.out.println(dungeonPrincess.calculateMinimumHP(arr));
+
+        int chordPairs = 5;
+        IntersectingChordsInACircle intersectingChordsInACircle = new IntersectingChordsInACircle();
+        System.out.println(intersectingChordsInACircle.chordCnt(chordPairs));
     }
 }

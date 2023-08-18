@@ -1,5 +1,4 @@
 public class SearchInBitonicArray {
-
     public SearchInBitonicArray(){}
 
     public int solve(int[] A, int B) {

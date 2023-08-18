@@ -6,5 +6,15 @@ public class Main {
         FindAPeakElement findAPeakElement = new FindAPeakElement();
 
         System.out.println(findAPeakElement.solve(A2));
+
+        int[][] mat = new int[][]{{3},{29},{36},{63},{67},{72},{74},{78},{75}};
+        int target = 41;
+
+        MatrixSearch matrixSearch = new MatrixSearch();
+
+        System.out.println(matrixSearch.searchMatrix(mat, target));
+
+        FindTargetIndicesAfterSortingArray findTargetIndicesAfterSortingArray = new FindTargetIndicesAfterSortingArray();
+        System.out.println(findTargetIndicesAfterSortingArray.targetIndices(A, 3));
     }
 }

@@ -1,9 +1,20 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
+ class Pairs {
+    int num1;
+    int num2;
+
+    public Pairs(int num1, int num2){
+        this.num1 = num1;
+        this.num2 = num2;
+    }
+
+    public Pairs(){}
+}
 public class RottenOranges {
     int[][] timeArr;
-    Queue<Pair> nodeQueue;
+    Queue<Pairs> nodeQueue;
     public RottenOranges(){}
 
     public int solve(int[][] A) {
@@ -20,7 +31,7 @@ public class RottenOranges {
         for(int i=0; i<A.length; i++){
             for(int j=0; j<A[i].length; j++){
                 if(A[i][j] == 2){
-                    nodeQueue.add(new Pair(i, j));
+                    nodeQueue.add(new Pairs(i, j));
                     timeArr[i][j] = 0;
                 }
             }
@@ -29,30 +40,30 @@ public class RottenOranges {
 
     public void bfs(int[][] A){
         while (!nodeQueue.isEmpty()){
-            Pair currPair = nodeQueue.poll();
+            Pairs currPairs = nodeQueue.poll();
 
-            int i= currPair.num1;
-            int j= currPair.num2;
+            int i= currPairs.num1;
+            int j= currPairs.num2;
 
             if(j-1 >=0 && A[i][j-1] == 1){
                 A[i][j-1] = 2;
                 timeArr[i][j-1] = timeArr[i][j] + 1;
-                nodeQueue.add(new Pair(i, j-1));
+                nodeQueue.add(new Pairs(i, j-1));
             }
             if(j+1 < A[i].length && A[i][j+1] == 1){
                 A[i][j+1] = 2;
                 timeArr[i][j+1] = timeArr[i][j] + 1;
-                nodeQueue.add(new Pair(i, j+1));
+                nodeQueue.add(new Pairs(i, j+1));
             }
             if(i-1 >=0 && A[i-1][j] == 1){
                 A[i-1][j] = 2;
                 timeArr[i-1][j] = timeArr[i][j] + 1;
-                nodeQueue.add(new Pair(i-1, j));
+                nodeQueue.add(new Pairs(i-1, j));
             }
             if(i+1 < A.length && A[i+1][j] == 1){
                 A[i+1][j] = 2;
                 timeArr[i+1][j] = timeArr[i][j] + 1;
-                nodeQueue.add(new Pair(i+1, j));
+                nodeQueue.add(new Pairs(i+1, j));
             }
         }
     }

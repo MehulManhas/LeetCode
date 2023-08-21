@@ -1,8 +1,11 @@
 public class Pair {
-    int num1;
-    int num2;
-    public Pair(int num1, int num2){
-        this.num1 = num1;
-        this.num2 = num2;
+    int node;
+    int weight;
+
+    public Pair(int node, int weight){
+        this.node = node;
+        this.weight = weight;
     }
+
+    public Pair(){}
 }

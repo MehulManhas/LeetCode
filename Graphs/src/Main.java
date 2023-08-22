@@ -53,13 +53,24 @@ public class Main {
 //            System.out.println(i);
 //        }
 
-        int[][] edges = new int[][]{
-                {1,2},
+//        int[][] edges = new int[][]{
+//                {1,2},
+//                {2, 3},
+//                {4, 2}
+//        };
+//
+//        FindCenterOfStarGraph findCenterOfStarGraph = new FindCenterOfStarGraph();
+//        System.out.println(findCenterOfStarGraph.findCenter(edges));
+        int nodes = 4;
+        int[][] trust = new int[][]{
+                {1, 3},
                 {2, 3},
-                {4, 2}
+                {4, 3},
+                {4, 2},
+                {2, 4},
+                {1, 4}
         };
-
-        FindCenterOfStarGraph findCenterOfStarGraph = new FindCenterOfStarGraph();
-        System.out.println(findCenterOfStarGraph.findCenter(edges));
+        FindTheTownJudge findTheTownJudge = new FindTheTownJudge();
+        System.out.println(findTheTownJudge.findJudge(nodes, trust));
     }
 }

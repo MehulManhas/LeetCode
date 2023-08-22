@@ -35,22 +35,31 @@ public class Main {
 //            FindTheTownJudge findTheTownJudge = new FindTheTownJudge();
 //            System.out.println(findTheTownJudge.findJudge(n, trust2));
 
-        int[][] inputArr = new int[][]{
-                {0, 3, 4},
-                {2, 3, 3},
-                {0, 1, 9},
-                {3, 4, 10},
-                {1, 3, 8}
+//        int[][] inputArr = new int[][]{
+//                {0, 3, 4},
+//                {2, 3, 3},
+//                {0, 1, 9},
+//                {3, 4, 10},
+//                {1, 3, 8}
+//        };
+
+//        int numberOfNodes = 5;
+//        int source = 4;
+//
+//        Dijsktras dijsktras = new Dijsktras();
+//        int[] ans = dijsktras.solve(numberOfNodes, inputArr, source);
+//
+//        for(int i : ans){
+//            System.out.println(i);
+//        }
+
+        int[][] edges = new int[][]{
+                {1,2},
+                {2, 3},
+                {4, 2}
         };
 
-        int numberOfNodes = 5;
-        int source = 4;
-
-        Dijsktras dijsktras = new Dijsktras();
-        int[] ans = dijsktras.solve(numberOfNodes, inputArr, source);
-
-        for(int i : ans){
-            System.out.println(i);
-        }
+        FindCenterOfStarGraph findCenterOfStarGraph = new FindCenterOfStarGraph();
+        System.out.println(findCenterOfStarGraph.findCenter(edges));
     }
 }

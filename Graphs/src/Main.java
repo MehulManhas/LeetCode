@@ -7,9 +7,13 @@ public class Main {
 //        int dest = 5;
 //        PathInDirectedGraph pathInDirectedGraph = new PathInDirectedGraph();
 //        System.out.println(pathInDirectedGraph.solve(dest, A));
+        //int[] input = new int[]{1,1,2,3,4,3,4,1};
+//        int B = 7;
+//        int C = 7;
+
 //        int[] input = new int[]{1,1,1,3,3,2,2,7,6};
-//        int B = 2;
-//        int C = 8;
+//        int B = 9;
+//        int C = 1;
 //        FirstDepthFirstSearch firstDepthFirstSearch = new FirstDepthFirstSearch();
 //        System.out.println(firstDepthFirstSearch.solve(input, B, C));
 //
@@ -61,16 +65,42 @@ public class Main {
 //
 //        FindCenterOfStarGraph findCenterOfStarGraph = new FindCenterOfStarGraph();
 //        System.out.println(findCenterOfStarGraph.findCenter(edges));
-        int nodes = 4;
-        int[][] trust = new int[][]{
-                {1, 3},
-                {2, 3},
-                {4, 3},
-                {4, 2},
-                {2, 4},
-                {1, 4}
-        };
-        FindTheTownJudge findTheTownJudge = new FindTheTownJudge();
-        System.out.println(findTheTownJudge.findJudge(nodes, trust));
+//        int nodes = 4;
+//        int[][] trust = new int[][]{
+//                {1, 3},
+//                {2, 3},
+//                {4, 3},
+//                {4, 2},
+//                {2, 4},
+//                {1, 4}
+//        };
+//        FindTheTownJudge findTheTownJudge = new FindTheTownJudge();
+//        System.out.println(findTheTownJudge.findJudge(nodes, trust));
+
+//        int A = 4;
+//        int[][] B = new int[][]{
+//                {1, 2, 1},{2, 3, 4},{1, 4, 3},
+//                {4, 3, 2},
+//                {1, 3, 10}
+//        };
+//        CommutableIslands commutableIslands = new CommutableIslands();
+//        System.out.println(commutableIslands.solve(A, B));
+
+//        int[][] A = new int[][]
+//                {
+//                        {0 , 50 , 39},
+//                        {-1 , 0 , 1},
+//                        {-1 , 10 , 0}
+//                };
+//        FloydWarshall floydWarshall = new FloydWarshall();
+//        int[][] ans = floydWarshall.solve(A);
+//
+//        for(int[] row : ans){
+//            for(int i : row){
+//                System.out.print(i + " ");
+//            }
+//            System.out.println();
+//        }
+
     }
 }

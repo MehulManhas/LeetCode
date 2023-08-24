@@ -12,16 +12,18 @@ public class Main {
 //        HappyNumber happyNumber = new HappyNumber();
 //        System.out.println(happyNumber.isHappy(10));
 
-        int[] nums = new int[]{1, 2, 3, 3, 3};
-        int[] choice = new int[]{3, 1, 3};
-        RandomPickIndex randomPickIndex = new RandomPickIndex();
-        randomPickIndex.Solution(nums);
+//        int[] nums = new int[]{1, 2, 3, 3, 3};
+//        int[] choice = new int[]{3, 1, 3};
+//        RandomPickIndex randomPickIndex = new RandomPickIndex();
+//        randomPickIndex.Solution(nums);
+//
+//        for(int i : choice){
+//            System.out.println(randomPickIndex.pick(i));
+//        }
 
-        for(int i : choice){
-            System.out.println(randomPickIndex.pick(i));
-        }
-
-
+        String A = "bcbc";
+        CountA countA = new CountA();
+        System.out.println(countA.solve(A));
 
     }
 }

@@ -15,11 +15,15 @@ public class Main {
 //
 //        System.out.println(nse.prevSmaller(quest3));
 
-        int[] pushed = new int[]{1,2,3,4,5};
-        int[] popped = new int[]{4,5,3,2,1}; // true
-        int[] popped1 = new int[]{4,3,5,1,2}; //false
-        ValidStackSequences validStackSequences = new ValidStackSequences();
-        System.out.println(validStackSequences.validateStackSequences(pushed, popped));
+//        int[] pushed = new int[]{1,2,3,4,5};
+//        int[] popped = new int[]{4,5,3,2,1}; // true
+//        int[] popped1 = new int[]{4,3,5,1,2}; //false
+//        ValidStackSequences validStackSequences = new ValidStackSequences();
+//        System.out.println(validStackSequences.validateStackSequences(pushed, popped));
+
+        int[] A = new int[]{5, 17, 100, 11};
+        SortStackUsingAnotherStack sortStackUsingAnotherStack = new SortStackUsingAnotherStack();
+        int[] ans = sortStackUsingAnotherStack.solve(A);
 
     }
 }

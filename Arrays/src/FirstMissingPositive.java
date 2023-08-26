@@ -89,9 +89,9 @@ public class FirstMissingPositive {
                 if(nums[posIndex] < nums.length && nums[posIndex] < posIndex){
                     swap(nums, start, posIndex);
                 }
-                else if(nums[posIndex] > nums.length && ){
-                    swap(nums, start, );
-                }
+//                else if(nums[posIndex] > nums.length && ){
+//                    swap(nums, start, );
+//                }
             }
 
         }

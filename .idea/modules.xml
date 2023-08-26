@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/Recursion/Recursion.iml" filepath="$PROJECT_DIR$/Recursion/Recursion.iml" />
       <module fileurl="file://$PROJECT_DIR$/Stacks/Stacks.iml" filepath="$PROJECT_DIR$/Stacks/Stacks.iml" />
       <module fileurl="file://$PROJECT_DIR$/StringPatternMatching/StringPatternMatching.iml" filepath="$PROJECT_DIR$/StringPatternMatching/StringPatternMatching.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Strings/Strings.iml" filepath="$PROJECT_DIR$/Strings/Strings.iml" />
       <module fileurl="file://$PROJECT_DIR$/TwoPointer/TwoPointer.iml" filepath="$PROJECT_DIR$/TwoPointer/TwoPointer.iml" />
     </modules>
   </component>

@@ -23,7 +23,7 @@ public class MaximumUnitsOnTruck {
 
         int sizeFilled = 0;
         int itr = 0;
-k
+
         while(truckSize >= 0 && itr < pairs.length){
             if(pairs[itr].numberOfBoxes > truckSize){
                 sizeFilled += truckSize * pairs[itr].numberOfUnitsPerBox;

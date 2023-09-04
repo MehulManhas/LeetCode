@@ -7,8 +7,6 @@ public class LevelOrderTraversal {
     public ArrayList levelOrderTraversal(TreeNode root){
         Queue<TreeNode> addressQueue = new LinkedList<>();
 
-
-
         addressQueue.add(root);
 
         while(addressQueue.size() > 0){

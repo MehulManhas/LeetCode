@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.zip.Checksum;
 
 public class Main {
@@ -14,10 +16,18 @@ public class Main {
 //        FirstMissingPositive firstMissingPositive = new FirstMissingPositive();
 //        firstMissingPositive.calculateFirstMissing(arr4);
 
-        int[] a = new int[]{1, 2, 5, -7, 2, 3};
-        MaxNonNegativeSubArray maxNonNegativeSubArray = new MaxNonNegativeSubArray();
-        System.out.println(maxNonNegativeSubArray.maxset(a));
+//        int[] a = new int[]{1, 2, 5, -7, 2, 3};
+//        MaxNonNegativeSubArray maxNonNegativeSubArray = new MaxNonNegativeSubArray();
+//        System.out.println(maxNonNegativeSubArray.maxset(a));
 
+        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(0, 0, 3, 4, 5));
+        AddOneToNumber addOneToNumber = new AddOneToNumber();
+
+        A = addOneToNumber.plusOne(A);
+
+        for(int i : A){
+            System.out.println(i);
+        }
 
     }
 }

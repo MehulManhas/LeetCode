@@ -21,9 +21,31 @@ public class Main {
 //        ValidStackSequences validStackSequences = new ValidStackSequences();
 //        System.out.println(validStackSequences.validateStackSequences(pushed, popped));
 
-        int[] A = new int[]{5, 17, 100, 11};
-        SortStackUsingAnotherStack sortStackUsingAnotherStack = new SortStackUsingAnotherStack();
-        int[] ans = sortStackUsingAnotherStack.solve(A);
+//        int[] A = new int[]{5, 17, 100, 11};
+//        SortStackUsingAnotherStack sortStackUsingAnotherStack = new SortStackUsingAnotherStack();
+//        int[] ans = sortStackUsingAnotherStack.solve(A);
+
+        MinStack minStack = new MinStack();
+        //minStack.push(19);
+        minStack.push(10);
+        minStack.push(9);
+        System.out.println(minStack.getMin());
+        minStack.push(8);
+        System.out.println(minStack.getMin());
+        minStack.push(7);
+        System.out.println(minStack.getMin());
+        minStack.push(6);
+        System.out.println(minStack.getMin());
+        minStack.pop();
+        System.out.println(minStack.getMin());
+        minStack.pop();
+        System.out.println(minStack.getMin());
+        minStack.pop();
+        System.out.println(minStack.getMin());
+        minStack.pop();
+        System.out.println(minStack.getMin());
+        minStack.pop();
+        System.out.println(minStack.getMin());
 
     }
 }

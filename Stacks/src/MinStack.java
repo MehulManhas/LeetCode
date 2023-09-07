@@ -8,25 +8,26 @@ public class MinStack {
     }
 
     public void push(int x) {
-        if(minStack.empty()){
+        if(minStack.isEmpty()){
             minStack.push(x);
+            currentStack.push(x);
+            return;
         }
-        else if(minStack.peek() >= x){
-            minStack.push(x);
-        }
+
         currentStack.push(x);
+
+        if(x <= minStack.peek()){
+            minStack.push(x);
+        }
     }
 
     public void pop() {
-        if(currentStack.isEmpty()){
-            return;
-        }
-        if(minStack.peek() == currentStack.peek()){
-            minStack.pop();
-            currentStack.pop();
-        }
-        else if(minStack.peek() != currentStack.pop()){
-            currentStack.pop();
+
+        if(!currentStack.isEmpty()){
+            int current = currentStack.pop();
+            if(current == minStack.peek()){
+                minStack.pop();
+            }
         }
     }
 

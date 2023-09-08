@@ -40,8 +40,15 @@ public class Main {
 //        PairsWithGivenSumII pairsWithGivenSumII = new PairsWithGivenSumII(t3, target3);
 //        System.out.println(pairsWithGivenSumII.solve(pairsWithGivenSumII.createMap(), pairsWithGivenSumII.createSet(), target3));
 
-        ArrayList<Integer> input = new ArrayList<>(Arrays.asList(-5, 2, 1, 3));
-        ThreeSumZero threeSumZero = new ThreeSumZero();
-        System.out.println(threeSumZero.compute(input));
+//        ArrayList<Integer> input = new ArrayList<>(Arrays.asList(-5, 2, 1, 3));
+//        ThreeSumZero threeSumZero = new ThreeSumZero();
+//        System.out.println(threeSumZero.compute(input));
+
+        int[] A = new int[]{1, 4, 5, 8, 10};
+        int[] B = new int[]{6, 9, 15};
+        int[] C = new int[]{2, 3, 6, 6};
+        MinimizeTheAbsoluteDifference minimizeTheAbsoluteDifference = new MinimizeTheAbsoluteDifference();
+
+        System.out.println(minimizeTheAbsoluteDifference.solve(A, B, C));
     }
 }

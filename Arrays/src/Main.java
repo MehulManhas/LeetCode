@@ -21,23 +21,23 @@ public class Main {
 //        MaxNonNegativeSubArray maxNonNegativeSubArray = new MaxNonNegativeSubArray();
 //        System.out.println(maxNonNegativeSubArray.maxset(a));
 
-//        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(0, 0, 3, 4, 5));
-//        AddOneToNumber addOneToNumber = new AddOneToNumber();
-//
-//        A = addOneToNumber.plusOne(A);
-//
-//        for(int i : A){
-//            System.out.println(i);
-//        }
-        int[] A = new int[]{1, 2, 5, -7, 2, 3};
-        int[] B = new int[]{1967513926,1540383426,-1303455736,-521595368};
+        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(2,5,6,8,6,1,2,4,5));
+        AddOneToNumber addOneToNumber = new AddOneToNumber();
 
-        MaxNonNegativeSubArray maxNonNegativeSubArray = new MaxNonNegativeSubArray();
-        int[] ans = maxNonNegativeSubArray.maxset(B);
+        A = addOneToNumber.plusOne(A);
 
-        for(int i : ans){
-            System.out.print(i);
+        for(int i : A){
+            System.out.println(i);
         }
+//        int[] A = new int[]{1, 2, 5, -7, 2, 3};
+//        int[] B = new int[]{1967513926,1540383426,-1303455736,-521595368};
+//
+//        MaxNonNegativeSubArray maxNonNegativeSubArray = new MaxNonNegativeSubArray();
+//        int[] ans = maxNonNegativeSubArray.maxset(B);
+//
+//        for(int i : ans){
+//            System.out.print(i);
+//        }
 
     }
 }

@@ -6,30 +6,50 @@ public class AddOneToNumber {
 
     }
     public ArrayList<Integer> plusOne(ArrayList<Integer> A) {
-        ArrayList<Integer> ans = new ArrayList<>(A.size());
 
+        A = removeLeadingZeros(A);
 
+        boolean addedOne = false;
         for(int i=A.size()-1; i>=0; i--){
-            if(A.get(i) + 1 > 9){
-                A.add(i, 0);
-            }
-            else if(A.get(i) + 1 <= 9){
-
-                A.add(i, A.get(i)+1);
-                A.remove(i+1);
+            if(A.get(i) + 1 <= 9){
+                int element = A.get(i);
+                A.remove(i);
+                A.add(i, element+1);
+                addedOne = true;
                 break;
+            }
+            else{
+                A.remove(i);
+                A.add(i, 0);
             }
         }
 
-        while (A.get(itr) == 0){
-            if(A.get(i) == 0){
-                A.remove(i);
+        if(!addedOne){
+            ArrayList<Integer> ans = new ArrayList<>();
+            for(int i=0; i<=A.size(); i++){
+                ans.add(0);
+            }
+            ans.remove(0);
+            ans.add(0,1);
+
+            return ans;
+        }
+        return A;
+    }
+
+    public ArrayList<Integer> removeLeadingZeros(ArrayList<Integer> A){
+
+        while(true){
+            if(A.get(0) == 0){
+                A.remove(0);
             }
             else{
                 break;
             }
         }
 
-        return ans;
+        return A;
     }
+
+
 }

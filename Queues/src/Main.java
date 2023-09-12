@@ -22,9 +22,19 @@ public class Main {
 //        for (Integer i : ans) {
 //            System.out.println(i);
 //        }
-        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(2, 3, 1, 5, 4));
-        ArrayList<Integer> B = new ArrayList<>(Arrays.asList(1, 3, 5, 4, 2));
-        TaskScheduling taskScheduling = new TaskScheduling();
-        System.out.println(taskScheduling.solve(A, B));
+//        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(2, 3, 1, 5, 4));
+//        ArrayList<Integer> B = new ArrayList<>(Arrays.asList(1, 3, 5, 4, 2));
+//        TaskScheduling taskScheduling = new TaskScheduling();
+//        System.out.println(taskScheduling.solve(A, B));
+
+        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(10,9,8,7,6,5,4,3,2,1));
+
+        SlidingWindowMaximum slidingWindowMaximum = new SlidingWindowMaximum();
+
+        ArrayList<Integer> ans = slidingWindowMaximum.slidingMaximum(A,2 );
+
+        for(int a : ans){
+            System.out.println(a + " ");
+        }
     }
 }

@@ -16,11 +16,11 @@ public class NextGreater {
 
             int element = A.get(i);
 
-            while (greaterToRight.size() > 0 && greaterToRight.peek() <= element){
+            while (!greaterToRight.isEmpty() && greaterToRight.peek() <= element){
                 greaterToRight.pop();
             }
 
-            if(greaterToRight.size() == 0){
+            if(greaterToRight.isEmpty()){
                 ans.set(i, -1);
             }
             else{

@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 //        ReversePolishNotation rpn = new ReversePolishNotation();
@@ -25,27 +28,33 @@ public class Main {
 //        SortStackUsingAnotherStack sortStackUsingAnotherStack = new SortStackUsingAnotherStack();
 //        int[] ans = sortStackUsingAnotherStack.solve(A);
 
-        MinStack minStack = new MinStack();
-        //minStack.push(19);
-        minStack.push(10);
-        minStack.push(9);
-        System.out.println(minStack.getMin());
-        minStack.push(8);
-        System.out.println(minStack.getMin());
-        minStack.push(7);
-        System.out.println(minStack.getMin());
-        minStack.push(6);
-        System.out.println(minStack.getMin());
-        minStack.pop();
-        System.out.println(minStack.getMin());
-        minStack.pop();
-        System.out.println(minStack.getMin());
-        minStack.pop();
-        System.out.println(minStack.getMin());
-        minStack.pop();
-        System.out.println(minStack.getMin());
-        minStack.pop();
-        System.out.println(minStack.getMin());
+//        MinStack minStack = new MinStack();
+//        //minStack.push(19);
+//        minStack.push(10);
+//        minStack.push(9);
+//        System.out.println(minStack.getMin());
+//        minStack.push(8);
+//        System.out.println(minStack.getMin());
+//        minStack.push(7);
+//        System.out.println(minStack.getMin());
+//        minStack.push(6);
+//        System.out.println(minStack.getMin());
+//        minStack.pop();
+//        System.out.println(minStack.getMin());
+//        minStack.pop();
+//        System.out.println(minStack.getMin());
+//        minStack.pop();
+//        System.out.println(minStack.getMin());
+//        minStack.pop();
+//        System.out.println(minStack.getMin());
+//        minStack.pop();
+//        System.out.println(minStack.getMin());
 
+
+        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(39,27,11,4,24,32,32,1));
+        NextGreater nextGreater = new NextGreater();
+        for(Integer i : nextGreater.nextGreater(A)){
+            System.out.println(i);
+        }
     }
 }

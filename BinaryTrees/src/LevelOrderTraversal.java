@@ -10,15 +10,16 @@ public class LevelOrderTraversal {
         addressQueue.add(root);
 
         while(addressQueue.size() > 0){
+
             ArrayList<Integer> currentLevel = new ArrayList<>();
             int queueSize = addressQueue.size();
 
             for(int i=0; i<queueSize; i++){
-                int currentLength = addressQueue.size();
+
                 TreeNode temp = addressQueue.peek();
                 addressQueue.poll();
 
-                System.out.println(temp.val);
+                //System.out.println(temp.val);
 
                 if(temp.left != null){
                     addressQueue.add(temp.left);
@@ -29,6 +30,7 @@ public class LevelOrderTraversal {
                 }
                 currentLevel.add(temp.val);
             }
+
             levelOrderTraversalOutput.add(currentLevel);
         }
         return levelOrderTraversalOutput;

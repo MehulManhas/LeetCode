@@ -1,14 +1,14 @@
 public class SUBARRAYOR {
 
     public int solve(int[] A) {
-        int n = A.length;
-        int totalSubArrays = (n*(n+1))/2;
+        long n = A.length;
+        long totalSubArrays = (n*(n+1))/2;
 
-        int ans = 0;
+        long ans = 0;
 
         for(int i=0; i<32; i++){
-            int currentSubArrays = 0;
-            int currentZeroCount = 0;
+            long currentSubArrays = 0;
+            long currentZeroCount = 0;
 
             for(int j=0; j<A.length; j++){
 
@@ -23,15 +23,20 @@ public class SUBARRAYOR {
 
             }
 
-            ans += ((totalSubArrays - currentSubArrays)*(1<<i)) % 1000000007;
+            ans = (ans + ((totalSubArrays - currentSubArrays) * (int) Math.pow(2,i))) % 1000000007;
 
         }
 
-        return ans;
+        return (int) ans;
     }
 
     public boolean checkSetBit(int num, int i){
 
-        return ((num >> i) & 1) == 1;
+        if(((num>>i)&1) == 1){
+            return true;
+        }
+
+        return false;
+
     }
 }

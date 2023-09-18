@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,9 +22,16 @@ public class Main {
 //            System.out.println(randomPickIndex.pick(i));
 //        }
 
-        String A = "bcbc";
-        CountA countA = new CountA();
-        System.out.println(countA.solve(A));
+//        String A = "bcbc";
+//        CountA countA = new CountA();
+//        System.out.println(countA.solve(A));
+
+        //ArrayList<Integer> A = new ArrayList<>(Arrays.asList(1, 2, 1, 3, 4, 3));
+        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(80,18,80,80,80,80,80,80,94,18));
+
+        int B = 8;
+        DistinctNumbersInWindow distinctNumbersInWindow = new DistinctNumbersInWindow();
+        ArrayList<Integer> ans = distinctNumbersInWindow.dNums(A, B);
 
     }
 }

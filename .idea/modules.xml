@@ -5,7 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Arrays/Arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/BinarySearch/BinarySearch.iml" filepath="$PROJECT_DIR$/BinarySearch/BinarySearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/BinaryTrees/BinaryTrees.iml" filepath="$PROJECT_DIR$/BinaryTrees/BinaryTrees.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BitManupulations/BitManupulations.iml" filepath="$PROJECT_DIR$/BitManupulations/BitManupulations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BitManipulations/BitManipulations.iml" filepath="$PROJECT_DIR$/BitManipulations/BitManipulations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Combinatorics/Combinatorics.iml" filepath="$PROJECT_DIR$/Combinatorics/Combinatorics.iml" />
       <module fileurl="file://$PROJECT_DIR$/DynamicProgramming/DynamicProgramming.iml" filepath="$PROJECT_DIR$/DynamicProgramming/DynamicProgramming.iml" />
       <module fileurl="file://$PROJECT_DIR$/GCD/GCD.iml" filepath="$PROJECT_DIR$/GCD/GCD.iml" />
       <module fileurl="file://$PROJECT_DIR$/Graphs/Graphs.iml" filepath="$PROJECT_DIR$/Graphs/Graphs.iml" />
@@ -14,9 +15,12 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/LeetCode.iml" filepath="$PROJECT_DIR$/.idea/LeetCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinkedList/LinkedList.iml" filepath="$PROJECT_DIR$/LinkedList/LinkedList.iml" />
       <module fileurl="file://$PROJECT_DIR$/ModularArithemetic/ModularArithemetic.iml" filepath="$PROJECT_DIR$/ModularArithemetic/ModularArithemetic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrefixSum/PrefixSum.iml" filepath="$PROJECT_DIR$/PrefixSum/PrefixSum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrimeNumbers/PrimeNumbers.iml" filepath="$PROJECT_DIR$/PrimeNumbers/PrimeNumbers.iml" />
       <module fileurl="file://$PROJECT_DIR$/PriorityQueue-Heaps/PriorityQueue-Heaps.iml" filepath="$PROJECT_DIR$/PriorityQueue-Heaps/PriorityQueue-Heaps.iml" />
       <module fileurl="file://$PROJECT_DIR$/Queues/Queues.iml" filepath="$PROJECT_DIR$/Queues/Queues.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursion/Recursion.iml" filepath="$PROJECT_DIR$/Recursion/Recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sorting/Sorting.iml" filepath="$PROJECT_DIR$/Sorting/Sorting.iml" />
       <module fileurl="file://$PROJECT_DIR$/Stacks/Stacks.iml" filepath="$PROJECT_DIR$/Stacks/Stacks.iml" />
       <module fileurl="file://$PROJECT_DIR$/StringPatternMatching/StringPatternMatching.iml" filepath="$PROJECT_DIR$/StringPatternMatching/StringPatternMatching.iml" />
       <module fileurl="file://$PROJECT_DIR$/Strings/Strings.iml" filepath="$PROJECT_DIR$/Strings/Strings.iml" />

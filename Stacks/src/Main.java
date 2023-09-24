@@ -51,10 +51,15 @@ public class Main {
 //        System.out.println(minStack.getMin());
 
 
-        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(39,27,11,4,24,32,32,1));
-        NextGreater nextGreater = new NextGreater();
-        for(Integer i : nextGreater.nextGreater(A)){
-            System.out.println(i);
-        }
+//        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(39,27,11,4,24,32,32,1));
+//        NextGreater nextGreater = new NextGreater();
+//        for(Integer i : nextGreater.nextGreater(A)){
+//            System.out.println(i);
+//        }
+
+        String A = "/home/";
+        SimplifyDirectoryPath simplifyDirectoryPath = new SimplifyDirectoryPath();
+
+        System.out.println(simplifyDirectoryPath.simplifyPath(A));
     }
 }

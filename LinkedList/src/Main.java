@@ -24,22 +24,45 @@ public class Main {
 //            head = head.next;
 //        }
 
+//        ListNode head = new ListNode(0);
+//        ListNode tempHead = head;
+//        int[] arr = new int[]{1,1,2,2,3};
+//
+//        for(int i : arr){
+//            tempHead.next = new ListNode(i);
+//            tempHead = tempHead.next;
+//        }
+//        head = head.next;
+//
+//        RemoveDuplicatesFromSortedList removeDuplicatesFromSortedList = new RemoveDuplicatesFromSortedList();
+//        removeDuplicatesFromSortedList.deleteDuplicates(head);
+//
+//        while(head != null){
+//            System.out.println(head.val);
+//            head = head.next;
+//        }
+
+
         ListNode head = new ListNode(0);
         ListNode tempHead = head;
-        int[] arr = new int[]{1,1,2,2,3};
+        int[] arr = new int[]{1,2,3,4,5};
 
         for(int i : arr){
             tempHead.next = new ListNode(i);
             tempHead = tempHead.next;
         }
+
+        int B = 2;
+        int C = 4;
+
         head = head.next;
 
-        RemoveDuplicatesFromSortedList removeDuplicatesFromSortedList = new RemoveDuplicatesFromSortedList();
-        removeDuplicatesFromSortedList.deleteDuplicates(head);
+        ReverseLinkListII reverseLinkListII = new ReverseLinkListII();
+        ListNode ans = reverseLinkListII.reverseBetween(head, B, C);
 
-        while(head != null){
-            System.out.println(head.val);
-            head = head.next;
+        while(ans != null){
+            System.out.println(ans.val);
+            ans = ans.next;
         }
     }
 }

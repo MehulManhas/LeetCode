@@ -1,50 +1,58 @@
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
 
 public class ThreeSumZero {
     public ThreeSumZero(){
 
     }
 
-    public ArrayList<ArrayList<Integer>> compute(ArrayList<Integer> A){
-        ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
-        if(A.size() < 3){
-            ArrayList<Integer> innerList = new ArrayList<>();
-            innerList.add(0);
-            ans.add(innerList);
-            return ans;
-        }
+    public ArrayList<ArrayList<Integer>> threeSum(ArrayList<Integer> A) {
 
         Collections.sort(A);
 
-        int start = 0;
-        int current = 1;
-        int end = 2;
-        int ansIdx = 0;
+        ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
 
-        while(start < end){
-            if(A.get(start) + A.get(current) + A.get(end) == 0){
-                ArrayList<Integer> innerList = new ArrayList<>();
-                innerList.add(start);
-                innerList.add(current);
-                innerList.add(end);
-                ans.add(innerList);
-                end++;
-                ansIdx++;
-            }
-            else if(A.get(start) + A.get(current) + A.get(end) > 0){
-                start++;
-            }
-            else if(A.get(start) + A.get(current) + A.get(end) < 0){
-                end++;
-            }
-        }
+        for(int leftPtr = 0; leftPtr < A.size(); leftPtr++){
 
-        if(ans.isEmpty()){
-            ArrayList<Integer> innerList = new ArrayList<>();
-            innerList.add(0);
-            ans.add(innerList);
-            return ans;
+            if(leftPtr > 0 && A.get(leftPtr).equals(A.get(leftPtr-1))){
+                continue;
+            }
+
+            int middlePtr = leftPtr + 1;
+            int rightPtr = A.size()-1;
+
+            while(middlePtr < rightPtr){
+
+                int sum = A.get(leftPtr) + A.get(middlePtr) + A.get(rightPtr);
+
+                if(sum == 0){
+
+                    ArrayList<Integer> row = new ArrayList<>();
+
+                    row.add(A.get(leftPtr));
+                    row.add(A.get(middlePtr));
+                    row.add(A.get(rightPtr));
+
+                    ans.add(row);
+
+                    int x = A.get(middlePtr);
+
+                    while (middlePtr < rightPtr && A.get(middlePtr) == x){
+                        middlePtr++;
+                    }
+
+                    int y = A.get(rightPtr);
+
+                    while (middlePtr < rightPtr && A.get(rightPtr) == y){
+                        rightPtr--;
+                    }
+                }
+                else if(sum < 0){
+                    middlePtr++;
+                }
+                else{
+                    rightPtr--;
+                }
+            }
         }
         return ans;
     }

@@ -44,11 +44,23 @@ public class Main {
 //        ThreeSumZero threeSumZero = new ThreeSumZero();
 //        System.out.println(threeSumZero.compute(input));
 
-        int[] A = new int[]{1, 4, 5, 8, 10};
-        int[] B = new int[]{6, 9, 15};
-        int[] C = new int[]{2, 3, 6, 6};
-        MinimizeTheAbsoluteDifference minimizeTheAbsoluteDifference = new MinimizeTheAbsoluteDifference();
+//        int[] A = new int[]{1, 4, 5, 8, 10};
+//        int[] B = new int[]{6, 9, 15};
+//        int[] C = new int[]{2, 3, 6, 6};
+//        MinimizeTheAbsoluteDifference minimizeTheAbsoluteDifference = new MinimizeTheAbsoluteDifference();
+//
+//        System.out.println(minimizeTheAbsoluteDifference.solve(A, B, C));
 
-        System.out.println(minimizeTheAbsoluteDifference.solve(A, B, C));
+//        int[] A = new int[]{1, 1, 1};
+//        int B = 2;
+//
+//        PairsWithGivenSumII pairsWithGivenSumII = new PairsWithGivenSumII();
+//        System.out.println(pairsWithGivenSumII.solve(A, B));
+
+
+        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(1,-4,0,0,5,-5,1,0,-2,4,-4,1,-1,-4,3,4,-1,-1,-3));
+
+        ThreeSumZero threeSumZero = new ThreeSumZero();
+        System.out.println(threeSumZero.threeSum(A));
     }
 }

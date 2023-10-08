@@ -31,7 +31,7 @@ public class LongestPalindromicSubstring {
 
     public int[] getLongestPalindromicSubstring(String A, int leftStart, int rightStart){
 
-        while(leftStart > 0 && rightStart < A.length() && A.charAt(leftStart) == A.charAt(rightStart)){
+        while(leftStart >= 0 && rightStart < A.length() && A.charAt(leftStart) == A.charAt(rightStart)){
             leftStart--;
             rightStart++;
         }

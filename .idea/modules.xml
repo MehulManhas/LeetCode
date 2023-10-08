@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/LinkedList/LinkedList.iml" filepath="$PROJECT_DIR$/LinkedList/LinkedList.iml" />
       <module fileurl="file://$PROJECT_DIR$/ModularArithemetic/ModularArithemetic.iml" filepath="$PROJECT_DIR$/ModularArithemetic/ModularArithemetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/PrefixSum/PrefixSum.iml" filepath="$PROJECT_DIR$/PrefixSum/PrefixSum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrimeNumber/PrimeNumber.iml" filepath="$PROJECT_DIR$/PrimeNumber/PrimeNumber.iml" />
       <module fileurl="file://$PROJECT_DIR$/PrimeNumbers/PrimeNumbers.iml" filepath="$PROJECT_DIR$/PrimeNumbers/PrimeNumbers.iml" />
       <module fileurl="file://$PROJECT_DIR$/PriorityQueue-Heaps/PriorityQueue-Heaps.iml" filepath="$PROJECT_DIR$/PriorityQueue-Heaps/PriorityQueue-Heaps.iml" />
       <module fileurl="file://$PROJECT_DIR$/Queues/Queues.iml" filepath="$PROJECT_DIR$/Queues/Queues.iml" />

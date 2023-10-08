@@ -8,7 +8,7 @@ public class Main {
 //            System.out.println(s);
 //        }
 
-        String A = "aaabaaa";
+        String A = "aaaabaaa";
 
         LongestPalindromicSubstring longestPalindromicSubstring = new LongestPalindromicSubstring();
         System.out.println(longestPalindromicSubstring.longestPalindrome(A));

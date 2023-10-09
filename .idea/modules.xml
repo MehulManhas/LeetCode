@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/LeetCode.iml" filepath="$PROJECT_DIR$/.idea/LeetCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinkedList/LinkedList.iml" filepath="$PROJECT_DIR$/LinkedList/LinkedList.iml" />
       <module fileurl="file://$PROJECT_DIR$/ModularArithemetic/ModularArithemetic.iml" filepath="$PROJECT_DIR$/ModularArithemetic/ModularArithemetic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Prefix Sum/Prefix Sum.iml" filepath="$PROJECT_DIR$/Prefix Sum/Prefix Sum.iml" />
       <module fileurl="file://$PROJECT_DIR$/PrefixSum/PrefixSum.iml" filepath="$PROJECT_DIR$/PrefixSum/PrefixSum.iml" />
       <module fileurl="file://$PROJECT_DIR$/PrimeNumber/PrimeNumber.iml" filepath="$PROJECT_DIR$/PrimeNumber/PrimeNumber.iml" />
       <module fileurl="file://$PROJECT_DIR$/PrimeNumbers/PrimeNumbers.iml" filepath="$PROJECT_DIR$/PrimeNumbers/PrimeNumbers.iml" />
@@ -27,6 +28,7 @@
       <module fileurl="file://$PROJECT_DIR$/Stacks/Stacks.iml" filepath="$PROJECT_DIR$/Stacks/Stacks.iml" />
       <module fileurl="file://$PROJECT_DIR$/StringPatternMatching/StringPatternMatching.iml" filepath="$PROJECT_DIR$/StringPatternMatching/StringPatternMatching.iml" />
       <module fileurl="file://$PROJECT_DIR$/Strings/Strings.iml" filepath="$PROJECT_DIR$/Strings/Strings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tries/Tries.iml" filepath="$PROJECT_DIR$/Tries/Tries.iml" />
       <module fileurl="file://$PROJECT_DIR$/TwoPointer/TwoPointer.iml" filepath="$PROJECT_DIR$/TwoPointer/TwoPointer.iml" />
     </modules>
   </component>

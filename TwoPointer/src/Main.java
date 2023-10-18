@@ -58,9 +58,14 @@ public class Main {
 //        System.out.println(pairsWithGivenSumII.solve(A, B));
 
 
-        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(1,-4,0,0,5,-5,1,0,-2,4,-4,1,-1,-4,3,4,-1,-1,-3));
+//        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(1,-4,0,0,5,-5,1,0,-2,4,-4,1,-1,-4,3,4,-1,-1,-3));
+//
+//        ThreeSumZero threeSumZero = new ThreeSumZero();
+//        System.out.println(threeSumZero.threeSum(A));
 
-        ThreeSumZero threeSumZero = new ThreeSumZero();
-        System.out.println(threeSumZero.threeSum(A));
+        int[] A = new int[]{1,2,6,6,7,9,9};
+        int B = 13;
+        PairsWithGivenSumII pairsWithGivenSumII = new PairsWithGivenSumII();
+        System.out.println(pairsWithGivenSumII.solve(A, B));
     }
 }

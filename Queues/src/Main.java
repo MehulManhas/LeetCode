@@ -27,14 +27,17 @@ public class Main {
 //        TaskScheduling taskScheduling = new TaskScheduling();
 //        System.out.println(taskScheduling.solve(A, B));
 
-        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(10,9,8,7,6,5,4,3,2,1));
-
-        SlidingWindowMaximum slidingWindowMaximum = new SlidingWindowMaximum();
-
-        ArrayList<Integer> ans = slidingWindowMaximum.slidingMaximum(A,2 );
-
-        for(int a : ans){
-            System.out.println(a + " ");
-        }
+//        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(10,9,8,7,6,5,4,3,2,1));
+//
+//        SlidingWindowMaximum slidingWindowMaximum = new SlidingWindowMaximum();
+//
+//        ArrayList<Integer> ans = slidingWindowMaximum.slidingMaximum(A,2 );
+//
+//        for(int a : ans){
+//            System.out.println(a + " ");
+//        }
+        String A = new String("abcabc");
+        FirstNonRepeatingCharacter firstNonRepeatingCharacter = new FirstNonRepeatingCharacter();
+        System.out.println(firstNonRepeatingCharacter.solve(A));
     }
 }

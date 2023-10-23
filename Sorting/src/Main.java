@@ -19,12 +19,15 @@ public class Main {
 //        for(int i : A){
 //            System.out.print(i + " ");
 //        }
-        int[] A = new int[]{12, 11, 13, 5, 6, 7};
-        QuickSort quickSort = new QuickSort();
-        quickSort.solve(A);
-
-        for(int i : A){
-            System.out.print(i + " ");
-        }
+//        int[] A = new int[]{12, 11, 13, 5, 6, 7};
+//        QuickSort quickSort = new QuickSort();
+//        quickSort.solve(A);
+//
+//        for(int i : A){
+//            System.out.print(i + " ");
+//        }
+        int[] A = new int[]{28,18,44,49,41,14};
+        InversionCountInAnArray inversionCountInAnArray = new InversionCountInAnArray();
+        System.out.println(inversionCountInAnArray.solve(A));
     }
 }

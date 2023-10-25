@@ -26,8 +26,12 @@ public class Main {
 //        for(int i : A){
 //            System.out.print(i + " ");
 //        }
-        int[] A = new int[]{28,18,44,49,41,14};
-        InversionCountInAnArray inversionCountInAnArray = new InversionCountInAnArray();
-        System.out.println(inversionCountInAnArray.solve(A));
+//        int[] A = new int[]{28,18,44,49,41,14};
+//        InversionCountInAnArray inversionCountInAnArray = new InversionCountInAnArray();
+//        System.out.println(inversionCountInAnArray.solve(A));
+
+        int[] A = new int[]{3, 5, 10};
+        SumTheDifference sumTheDifference = new SumTheDifference();
+        System.out.println(sumTheDifference.solve(A));
     }
 }

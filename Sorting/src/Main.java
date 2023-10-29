@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Queue;
 
 public class Main {
@@ -30,8 +31,12 @@ public class Main {
 //        InversionCountInAnArray inversionCountInAnArray = new InversionCountInAnArray();
 //        System.out.println(inversionCountInAnArray.solve(A));
 
-        int[] A = new int[]{3, 5, 10};
-        SumTheDifference sumTheDifference = new SumTheDifference();
-        System.out.println(sumTheDifference.solve(A));
+//        int[] A = new int[]{3, 5, 10};
+//        SumTheDifference sumTheDifference = new SumTheDifference();
+//        System.out.println(sumTheDifference.solve(A));
+
+        List<Integer> A = new ArrayList<>(Arrays.asList(3, 30, 34, 5, 9));
+        LargestNumber largestNumber = new LargestNumber();
+        System.out.println(largestNumber.largestNumber(A));
     }
 }

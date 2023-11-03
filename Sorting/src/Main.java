@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Queue;
 
 public class Main {
@@ -19,12 +20,23 @@ public class Main {
 //        for(int i : A){
 //            System.out.print(i + " ");
 //        }
-        int[] A = new int[]{12, 11, 13, 5, 6, 7};
-        QuickSort quickSort = new QuickSort();
-        quickSort.solve(A);
+//        int[] A = new int[]{12, 11, 13, 5, 6, 7};
+//        QuickSort quickSort = new QuickSort();
+//        quickSort.solve(A);
+//
+//        for(int i : A){
+//            System.out.print(i + " ");
+//        }
+//        int[] A = new int[]{28,18,44,49,41,14};
+//        InversionCountInAnArray inversionCountInAnArray = new InversionCountInAnArray();
+//        System.out.println(inversionCountInAnArray.solve(A));
 
-        for(int i : A){
-            System.out.print(i + " ");
-        }
+//        int[] A = new int[]{3, 5, 10};
+//        SumTheDifference sumTheDifference = new SumTheDifference();
+//        System.out.println(sumTheDifference.solve(A));
+
+        List<Integer> A = new ArrayList<>(Arrays.asList(3, 30, 34, 5, 9));
+        LargestNumber largestNumber = new LargestNumber();
+        System.out.println(largestNumber.largestNumber(A));
     }
 }

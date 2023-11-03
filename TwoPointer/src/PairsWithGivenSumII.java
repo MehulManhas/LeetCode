@@ -5,84 +5,108 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 public class PairsWithGivenSumII{
-    ArrayList<Integer> arr;
-    int sum = 0;
 
-    public PairsWithGivenSumII(ArrayList<Integer> arr, int sum){
-        this.arr = arr;
-        this.sum = sum;
+    public int solve(int[] A, int B) {
+
+        return optimized(A, B);
     }
 
-    public ArrayList<Integer> createSet(){
-        HashSet<Integer> set = new HashSet<>();
+    public int optimized(int[] A, int B){
+        int leftPtr = 0;
+        int rightPtr = A.length-1;
+        long count = 0;
+        long mod = (long) Math.pow(10,9)+7;
 
-        for(int i : arr){
-            set.add(i);
-        }
+        while (leftPtr < rightPtr){
 
-        ArrayList<Integer> arraySet = new ArrayList<>();
+            int sum = A[leftPtr] + A[rightPtr];
 
-        for(int i : set){
-            arraySet.add(i);
-        }
+            if(sum == B){
 
-        Collections.sort(arraySet);
-        return arraySet;
-    }
-    public HashMap<Integer, Integer> createMap(){
+                if(A[leftPtr] == A[rightPtr]){
 
-        HashMap<Integer, Integer> numToIndexMap = new HashMap<>();
+                    long duplicateCount = rightPtr - leftPtr + 1;
+                    count += (duplicateCount * (duplicateCount-1))/2;
+                    break;
+                }
 
-        for(int i=0; i<arr.size(); i++){
-            if(!numToIndexMap.containsKey(arr.get(i))){
-                numToIndexMap.put(arr.get(i), 1);
+                int leftPointerAddition = findNextPointerForDuplicateElement(A, A[leftPtr], leftPtr, 'l');
+                int rightPointerSubtraction = findNextPointerForDuplicateElement(A, A[rightPtr], rightPtr, 'r');
+
+                count += ((long) leftPointerAddition * rightPointerSubtraction);
+
+                leftPtr += leftPointerAddition;
+                rightPtr -= rightPointerSubtraction;
+
+            }
+            else if(sum < B){
+                leftPtr++;
             }
             else{
-                numToIndexMap.put(arr.get(i), numToIndexMap.get(arr.get(i))+1);
+                rightPtr--;
             }
         }
-        return numToIndexMap;
+
+        return (int) (count%mod);
     }
 
-    public int solve(HashMap<Integer, Integer> map, ArrayList<Integer> set, int target){
-        long modVal = (int) Math.pow(10,9)+7;
-        long ans = 0;
-        int left = 0;
-        int right = set.size()-1;
+    public int findNextPointerForDuplicateElement(int[] A, int elementToFind, int pointer, char searchDirection){
 
-        while(left<=right){
-            int total = set.get(left) + set.get(right);
+        int frequency = 0;
 
-            if(total < target){
-                left++;
-                continue;
-            }
-
-            if(total > right){
-                right--;
-                continue;
-            }
-
-            long leftFreq = map.get(left);
-            long rightFreq = map.get(right);
-
-            if(total == target){
-                if(left == right){
-                    ans += (leftFreq*(leftFreq-1))/2;
-                    ans = ans % modVal;
-
-                    return (int) ans;
-                }
-                else{
-                    ans += leftFreq*(leftFreq-1);
-                    ans = ans % modVal;
-
-                }
-                right--;
-                left++;
+        if(searchDirection == 'l'){
+            while (A[pointer] == elementToFind){
+                frequency++;
+                pointer++;
             }
         }
-        return (int) ans;
+        else if(searchDirection == 'r'){
+            while (A[pointer] == elementToFind){
+                frequency++;
+                pointer--;
+            }
+        }
+
+        return frequency;
+    }
+
+    public int bruteForce(int[] A, int B){
+        int leftPtr = 0;
+        int rightPtr = leftPtr+1;
+        int rightPtrLimit = checkMaxRightLimit(A, B);
+        int count = 0;
+
+        if(rightPtrLimit < 0){
+            return count;
+        }
+
+        while(leftPtr != rightPtrLimit){
+            while (rightPtr != rightPtrLimit+1){
+                if(leftPtr != rightPtr && A[leftPtr] + A[rightPtr] == B){
+                    count++;
+
+                }
+                rightPtr++;
+            }
+            leftPtr++;
+            rightPtr = leftPtr+1;
+        }
+
+        return count;
+    }
+
+
+    public int checkMaxRightLimit(int[] A, int B){
+        int rightPtr = -1;
+        for(int i=0; i<A.length; i++){
+            if(A[i] <= B){
+                rightPtr = i;
+            }
+            else{
+                break;
+            }
+        }
+        return rightPtr;
     }
 
 }

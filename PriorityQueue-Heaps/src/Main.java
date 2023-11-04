@@ -37,22 +37,25 @@ public class Main {
 //        KthSmallestElement kthSmallestElement = new KthSmallestElement();
 //        System.out.println(kthSmallestElement.kthsmallest(A, B));
 
-        ArrayList<ArrayList<Integer>> A = new ArrayList<>();
-
-        A.add(0, new ArrayList<>(Arrays.asList(1,-1)));
-        A.add(1, new ArrayList<>(Arrays.asList(2,-1)));
-
-        int B = 1;
-
-
-        BClosestPointsToOrigin bClosestPointsToOrigin = new BClosestPointsToOrigin();
-
-        ArrayList<ArrayList<Integer>> ans = bClosestPointsToOrigin.solve(A, B);
-
-        for(ArrayList<Integer> pair : ans){
-            System.out.print(pair.get(0)+" "+pair.get(1));
-            System.out.println();
-        }
+//        ArrayList<ArrayList<Integer>> A = new ArrayList<>();
+//
+//        A.add(0, new ArrayList<>(Arrays.asList(1,-1)));
+//        A.add(1, new ArrayList<>(Arrays.asList(2,-1)));
+//
+//        int B = 1;
+//
+//
+//        BClosestPointsToOrigin bClosestPointsToOrigin = new BClosestPointsToOrigin();
+//
+//        ArrayList<ArrayList<Integer>> ans = bClosestPointsToOrigin.solve(A, B);
+//
+//        for(ArrayList<Integer> pair : ans){
+//            System.out.print(pair.get(0)+" "+pair.get(1));
+//            System.out.println();
+//        }
+        int A = 100;
+        WaysToFormMaxHeap waysToFormMaxHeap = new WaysToFormMaxHeap();
+        System.out.println(waysToFormMaxHeap.solve(100));
 
     }
 }

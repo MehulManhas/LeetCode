@@ -21,14 +21,14 @@ public class Main {
 //        MaxNonNegativeSubArray maxNonNegativeSubArray = new MaxNonNegativeSubArray();
 //        System.out.println(maxNonNegativeSubArray.maxset(a));
 
-        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(2,5,6,8,6,1,2,4,5));
-        AddOneToNumber addOneToNumber = new AddOneToNumber();
-
-        A = addOneToNumber.plusOne(A);
-
-        for(int i : A){
-            System.out.println(i);
-        }
+//        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(2,5,6,8,6,1,2,4,5));
+//        AddOneToNumber addOneToNumber = new AddOneToNumber();
+//
+//        A = addOneToNumber.plusOne(A);
+//
+//        for(int i : A){
+//            System.out.println(i);
+//        }
 //        int[] A = new int[]{1, 2, 5, -7, 2, 3};
 //        int[] B = new int[]{1967513926,1540383426,-1303455736,-521595368};
 //
@@ -38,6 +38,10 @@ public class Main {
 //        for(int i : ans){
 //            System.out.print(i);
 //        }
+
+        int[] A = new int[]{1,2};
+        BestTimeToBuyAndSellStock bestTimeToBuyAndSellStock = new BestTimeToBuyAndSellStock();
+        System.out.println(bestTimeToBuyAndSellStock.maxProfit(A));
 
     }
 }

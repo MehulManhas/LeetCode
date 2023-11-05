@@ -17,7 +17,7 @@ public class SymmetricBinaryTree {
             return 0;
         }
 
-        if(checkSymmetric(A.left, B.right) == 1 && checkSymmetric(A.left, B.right) == 1){
+        if(checkSymmetric(A.left, B.right) == 1 && checkSymmetric(B.left, A.right) == 1){
             return 1;
         }
 

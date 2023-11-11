@@ -8,5 +8,15 @@ public class Main {
         ArrayList<Integer> A = new ArrayList<>(Arrays.asList(1, 2, 3));
         Subset subset = new Subset();
         subset.subsets(A);
+
+        NQueens nQueens = new NQueens();
+        ArrayList<ArrayList<String>> ans = nQueens.solveNQueens(4);
+
+        for(int i=0; i<ans.size(); i++){
+            for (int j=0; j<ans.get(0).size(); j++){
+                System.out.println(ans.get(i).get(j));
+            }
+            System.out.println();
+        }
     }
 }

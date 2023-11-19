@@ -39,9 +39,28 @@ public class Main {
 //            System.out.print(i);
 //        }
 
-        int[] A = new int[]{1,2};
-        BestTimeToBuyAndSellStock bestTimeToBuyAndSellStock = new BestTimeToBuyAndSellStock();
-        System.out.println(bestTimeToBuyAndSellStock.maxProfit(A));
+//        int[] A = new int[]{1,2};
+//        BestTimeToBuyAndSellStock bestTimeToBuyAndSellStock = new BestTimeToBuyAndSellStock();
+//        System.out.println(bestTimeToBuyAndSellStock.maxProfit(A));
 
+//        int[] A = new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4};
+//        MaxSumContiguousSubarray maxSumContiguousSubarray = new MaxSumContiguousSubarray();
+//        System.out.println(maxSumContiguousSubarray.maxSubArray(A));
+
+//        int[] A = new int[]{1,2,3};
+//        SumOfAllSubarrays sumOfAllSubarrays = new SumOfAllSubarrays();
+//        System.out.println(sumOfAllSubarrays.subarraySum(A));
+
+//        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(1, 100));
+//        int B = 100;
+//        SubarrayWithGivenSum subarrayWithGivenSum = new SubarrayWithGivenSum();
+//        System.out.println(subarrayWithGivenSum.solve(A, B));
+
+//        int[] A = new int[]{1, 2, 0};
+//        FirstMissingInteger firstMissingInteger = new FirstMissingInteger();
+//        System.out.println(firstMissingInteger.firstMissingPositive(A));
+        int[] A = new int[]{0, 1, 0, 2};
+        RainWaterTrapped rainWaterTrapped = new RainWaterTrapped();
+        System.out.println(rainWaterTrapped.trap(A));
     }
 }

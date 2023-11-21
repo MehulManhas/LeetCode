@@ -35,8 +35,13 @@ public class Main {
 //        SumTheDifference sumTheDifference = new SumTheDifference();
 //        System.out.println(sumTheDifference.solve(A));
 
-        List<Integer> A = new ArrayList<>(Arrays.asList(3, 30, 34, 5, 9));
-        LargestNumber largestNumber = new LargestNumber();
-        System.out.println(largestNumber.largestNumber(A));
+//        List<Integer> A = new ArrayList<>(Arrays.asList(3, 30, 34, 5, 9));
+//        LargestNumber largestNumber = new LargestNumber();
+//        System.out.println(largestNumber.largestNumber(A));
+
+        int[][] A = new int[][]{{1, 3}, {-2, 2}};
+        int B = 1;
+        BClosestPointsToOrigin bClosestPointsToOrigin = new BClosestPointsToOrigin();
+        System.out.println(bClosestPointsToOrigin.solve(A, B));
     }
 }

@@ -23,11 +23,15 @@ public class Main {
 //        System.out.println(searchInBitonicArray.solve(bitArr, B));
 
 
-        int[][] A = new int[][]{{1, 3, 5},{2, 6, 9},{3, 6, 9}};
-        //int[][] A = new int[][]{{1}};
+//        int[][] A = new int[][]{{1, 3, 5},{2, 6, 9},{3, 6, 9}};
+//        //int[][] A = new int[][]{{1}};
+//
+//        MatrixMedian matrixMedian = new MatrixMedian();
+//        System.out.println(matrixMedian.findMedian(A));
 
-        MatrixMedian matrixMedian = new MatrixMedian();
-        System.out.println(matrixMedian.findMedian(A));
-
+        int[] A = new int[]{1,3,5,6,10,110,200,205,300};
+        int target = 206;
+        BinarySearch binarySearch = new BinarySearch();
+        System.out.println(binarySearch.solve(A, target));
     }
 }

@@ -33,10 +33,18 @@ public class Main {
 //        DistinctNumbersInWindow distinctNumbersInWindow = new DistinctNumbersInWindow();
 //        ArrayList<Integer> ans = distinctNumbersInWindow.dNums(A, B);
 
-        int[] A = new int[]{1, 1, 2, 2, 3, 3};
-        int[] B = new int[]{1, 2, 1, 2, 1, 2};
-        CountRectangles countRectangles = new CountRectangles();
-        System.out.println(countRectangles.solve(A, B));
+//        int[] A = new int[]{1, 1, 2, 2, 3, 3};
+//        int[] B = new int[]{1, 2, 1, 2, 1, 2};
+//        CountRectangles countRectangles = new CountRectangles();
+//        System.out.println(countRectangles.solve(A, B));
+
+//        String A = "bottle";
+//        FrequencyBasedSorting frequencyBasedSorting = new FrequencyBasedSorting();
+//        System.out.println(frequencyBasedSorting.solve(A));
+
+        int[] A = new int[]{3, 2, -1};
+        LongestSubarrayZeroSum longestSubarrayZeroSum = new LongestSubarrayZeroSum();
+        System.out.println(longestSubarrayZeroSum.solve(A));
 
     }
 }

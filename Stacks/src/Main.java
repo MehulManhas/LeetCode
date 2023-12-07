@@ -57,9 +57,13 @@ public class Main {
 //            System.out.println(i);
 //        }
 
-        String A = "/home/";
-        SimplifyDirectoryPath simplifyDirectoryPath = new SimplifyDirectoryPath();
+//        String A = "/home/";
+//        SimplifyDirectoryPath simplifyDirectoryPath = new SimplifyDirectoryPath();
+//
+//        System.out.println(simplifyDirectoryPath.simplifyPath(A));
 
-        System.out.println(simplifyDirectoryPath.simplifyPath(A));
+        String A = "()[]";
+        BalancedParanthesis balancedParanthesis = new BalancedParanthesis();
+        System.out.println(balancedParanthesis.solve(A));
     }
 }

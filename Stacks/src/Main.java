@@ -62,8 +62,12 @@ public class Main {
 //
 //        System.out.println(simplifyDirectoryPath.simplifyPath(A));
 
-        String A = "()[]";
-        BalancedParanthesis balancedParanthesis = new BalancedParanthesis();
-        System.out.println(balancedParanthesis.solve(A));
+//        String A = "()[]";
+//        BalancedParanthesis balancedParanthesis = new BalancedParanthesis();
+//        System.out.println(balancedParanthesis.solve(A));
+
+        int[] A = new int[]{2, 1, 5, 6, 2, 3};
+        LargestRectangleInHistogram largestRectangleInHistogram = new LargestRectangleInHistogram();
+        System.out.println(largestRectangleInHistogram.largestRectangleArea(A));
     }
 }

@@ -12,13 +12,13 @@ public class DiameterOfBinaryTree {
     public int traverseAndGetDiameter(TreeNode root){
 
         if(root == null){
-            return -1;
+            return 0;
         }
 
-        int left = traverseAndGetDiameter(root.left)+1;
-        int right = traverseAndGetDiameter(root.right)+1;
+        int left = traverseAndGetDiameter(root.left);
+        int right = traverseAndGetDiameter(root.right);
 
         diameter = Math.max(diameter, left+right);
-        return Math.max(left, right);
+        return Math.max(left, right) + 1;
     }
 }

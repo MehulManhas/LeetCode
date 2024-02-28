@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class LevelOrderTraversal {
     ArrayList<ArrayList<Integer>> levelOrderTraversalOutput = new ArrayList<>();

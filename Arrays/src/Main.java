@@ -59,8 +59,19 @@ public class Main {
 //        int[] A = new int[]{1, 2, 0};
 //        FirstMissingInteger firstMissingInteger = new FirstMissingInteger();
 //        System.out.println(firstMissingInteger.firstMissingPositive(A));
-        int[] A = new int[]{0, 1, 0, 2};
-        RainWaterTrapped rainWaterTrapped = new RainWaterTrapped();
-        System.out.println(rainWaterTrapped.trap(A));
+//        int[] A = new int[]{0, 1, 0, 2};
+//        RainWaterTrapped rainWaterTrapped = new RainWaterTrapped();
+//        System.out.println(rainWaterTrapped.trap(A));
+
+//        ArrayList<Interval> A = new ArrayList<>();
+//        A.add(new Interval(1, 3));
+//        A.add(new Interval(6,9));
+//        Interval insert = new Interval(2,6);
+//        MergeIntervals mergeIntervals = new MergeIntervals();
+//        mergeIntervals.insert(A, insert);
+
+        int[] nums = new int[]{-7,-3,2,3,11};
+        SquaresOfASortedArray squaresOfASortedArray = new SquaresOfASortedArray();
+        System.out.println(squaresOfASortedArray.sortedSquares(nums));
     }
 }

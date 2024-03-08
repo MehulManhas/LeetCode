@@ -63,9 +63,10 @@ public class Main {
 //        ThreeSumZero threeSumZero = new ThreeSumZero();
 //        System.out.println(threeSumZero.threeSum(A));
 
-        int[] A = new int[]{1,2,6,6,7,9,9};
-        int B = 13;
-        PairsWithGivenSumII pairsWithGivenSumII = new PairsWithGivenSumII();
-        System.out.println(pairsWithGivenSumII.solve(A, B));
+//        int[] A = new int[]{1,2,6,6,7,9,9};
+//        int B = 13;
+//        PairsWithGivenSumII pairsWithGivenSumII = new PairsWithGivenSumII();
+//        System.out.println(pairsWithGivenSumII.solve(A, B));
+
     }
 }

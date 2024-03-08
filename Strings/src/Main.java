@@ -8,10 +8,14 @@ public class Main {
 //            System.out.println(s);
 //        }
 
-        String A = "aaaabaaa";
+//        String A = "aaaabaaa";
+//
+//        LongestPalindromicSubstring longestPalindromicSubstring = new LongestPalindromicSubstring();
+//        System.out.println(longestPalindromicSubstring.longestPalindrome(A));
 
-        LongestPalindromicSubstring longestPalindromicSubstring = new LongestPalindromicSubstring();
-        System.out.println(longestPalindromicSubstring.longestPalindrome(A));
+        String A = "1011";
+        MaximumOddBinaryNumber maximumOddBinaryNumber = new MaximumOddBinaryNumber();
+        System.out.println(maximumOddBinaryNumber.maximumOddBinaryNumber(A));
 
     }
 }

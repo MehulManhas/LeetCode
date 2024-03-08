@@ -93,7 +93,21 @@ public class Main {
         //LongestPalindromicList longestPalindromicList = new LongestPalindromicList();
 
         //int[] arr = new int[]{1, 2, 3, 4, 5};
-        int[] arr = new int[]{1, 5, 6, 2, 3, 4};
+//        int[] arr = new int[]{1, 5, 6, 2, 3, 4};
+//        ListNode head = new ListNode(-1);
+//        ListNode dummyHead = head;
+//
+//        for(int i : arr){
+//            dummyHead.next = new ListNode(i);
+//            dummyHead = dummyHead.next;
+//        }
+//
+//        head = head.next;
+//
+//        MiddleElementOfLinkedList middleElementOfLinkedList = new MiddleElementOfLinkedList();
+//        System.out.println(middleElementOfLinkedList.solve(head));
+
+        int[] arr = new int[]{1, 2, 3, 4};
         ListNode head = new ListNode(-1);
         ListNode dummyHead = head;
 
@@ -104,8 +118,8 @@ public class Main {
 
         head = head.next;
 
-        MiddleElementOfLinkedList middleElementOfLinkedList = new MiddleElementOfLinkedList();
-        System.out.println(middleElementOfLinkedList.solve(head));
-
+        ReorderList reorderList = new ReorderList();
+        ListNode reversedHead = reorderList.reorderList(head);
+        reorderList.printLinkedList(reversedHead);
     }
 }

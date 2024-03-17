@@ -68,5 +68,8 @@ public class Main {
 //        PairsWithGivenSumII pairsWithGivenSumII = new PairsWithGivenSumII();
 //        System.out.println(pairsWithGivenSumII.solve(A, B));
 
+        int[] nums = new int[]{0,0,1,0,1,0,1};
+        BinarySubarraysWithSum binarySubarraysWithSum = new BinarySubarraysWithSum();
+        binarySubarraysWithSum.numSubarraysWithSum(nums, 2);
     }
 }

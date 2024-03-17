@@ -25,9 +25,13 @@ public class Main {
 //
 //        FreeCars freeCars1 = new FreeCars();
 //        System.out.println(freeCars1.solve(A1, B1));
+//
+//        String A = "xxx....x";
+//        Seats seats = new Seats();
+//        System.out.println(seats.seats(A));
 
-        String A = "xxx....x";
-        Seats seats = new Seats();
-        System.out.println(seats.seats(A));
+        int[][] a = new int[][]{{7,10},{2,7}, {2,4}, {1,3}};
+        MeetingRoomsII meetingRoomsII = new MeetingRoomsII();
+        meetingRoomsII.minMeetingRooms(a);
     }
 }
